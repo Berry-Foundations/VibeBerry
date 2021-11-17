@@ -2,7 +2,7 @@
 
 ## Bug Fixes
 
-- None
+- Fixed The Issue Skipping A Song Causing Crashes That Leads To A Hang In Messages And Un-Responsive Bot
 
 ## Features Added
 
