@@ -1,2 +1,2 @@
-# VibeBerry
-VibeBerry - A Cool Berry Bot For Music!
+# *VibeBerry*
+*VibeBerry* is a *cool* **music bot**.
