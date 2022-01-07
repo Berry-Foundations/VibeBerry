@@ -14,6 +14,10 @@ usage: Shows the help menu.
 syntax: `vibe play [song name/url(YouTube)]`
 usage: Play music on connected voice channel through VibeBerry!
 
+**loop**
+syntax: `vibe loop [song name/url(YouTube)]`
+usage: Plays music on connected voice channel through VibeBerry till music skipped or stopped!
+
 **connect**
 syntax: `vibe connect`
 usage: Connects to the voice channel user is connected to.
@@ -40,5 +44,5 @@ usage: Stops the playing music.
 
 > Found A Bug?
 
-Found a bug? DM to `Attachment Aditya#4162` to report it.
+Found a bug? DM to [`Attachment Aditya#4162`](https://discord.com/users/838650497828651040) to report it.
 

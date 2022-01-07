@@ -37,32 +37,49 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
 
+			@keyframes spin {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+
 			* {
 				background: transparent;
 				font-family: 'Kite One', cursive;
 				color: #ffffff;
 				margin: 0;
 				padding: 0;
-				font-size: 24px;
+				font-size: 4vmin;
 				transition: 0.5s;
 				cursor: default;
 				user-select: none;
 			}
 
-			div {
-				padding: 20px;
+			.banner {
+				padding-top: 5vmin;
 			}
 
 			i {
+				padding: 2vmin;
+				background: #00ebd2;
 				cursor: pointer;
+				font-size: 5vmin;
+				height: 5vmin;
+				width: 5vmin;
+				text-align: center;
+				margin: 1vmin;
+				border-radius: 2vmin;
+			}
+
+			i:hover {
+				background: #00ade9;
 			}
 
 			h1 {
-				font-size: 42px;
-			}
-
-			.banner {
-				margin-top: 7.5%;
+				font-size: 10vmin;
 			}
 
 			.emp {
@@ -70,9 +87,8 @@
 			}
 
 			.VibeBerry {
-				width: 256px;
-				height: 256px;
-				margin-bottom: -30px;
+				height: 50%;
+				animation: spin 10s infinite linear;
 			}
 
 			.bg {
@@ -101,63 +117,8 @@
 				border-radius: 10px;
 			}
 
-			button {
-				padding: 10px;
-				outline: none;
-				border: 5px solid #ffffff;
-				border-radius: 10px;
-				cursor: pointer;
-				width: 54px;
-				background: #00ebd2ff;
-			}
-
-			button:hover {
-				background: #00ade9ff;
-			}
-
 			p {
-				margin-bottom: 20px;
-			}
-
-			.ft center {
-				border-radius: 10px;
-				font-size: 18px;
-				background-image: linear-gradient(to bottom, #00ebd2, #00ade9);
-				position: fixed;
-				bottom: 10px;
-				padding: 10px;
-				left: 30%;
-				right: 30%;
-			}
-
-			mark {
-				border-radius: 10px;
-				padding: 5px;
-				background-image: linear-gradient(to bottom, #00ebd2, #00ade9);
-			}
-
-			mark2 {
-				border-radius: 10px;
-				padding: 5px;
-				background-image: linear-gradient(to bottom, #00ebd2, #00ade9);
-				font-size: 14px;
-			}
-
-			a {
-				background: linear-gradient(to bottom, #00ebd2, #00ade9);
-				text-decoration: none;
-				cursor: pointer;
-				font-weight: lighter;
-				border-radius: 10px;
-				padding: 5px;
-				transition: 0s;
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-			}
-
-			a:hover {
-				transition: 0s;
-				font-weight: bolder;
+				margin-bottom: 3vmin;
 			}
 		</style>
 	</head>
@@ -166,67 +127,14 @@
 			<center>
 				<img class="VibeBerry" src="https://raw.githubusercontent.com/Attachment-Studios/VibeBerry/master/VibeBerry.png" />
 				<h1>VibeBerry</h1>
-			</center>
-		</div>
-		<div class="ux">
-			<center>
-				<button onclick="location.replace('#about');"><i class="fas fa-info"></i></button>
-				<button onclick="window.open('https://github.com/Attachment-Studios/VibeBerry');"><i class="fas fa-code" style="margin-left: -3px;"></i></button>
-				<button onclick="oauth();"><i class="fas fa-plus"></i></button>
-				<button onclick="location.replace('#commands');"><i class="fas fa-music"></i></button>
-				<button onclick="location.replace('#bugs');"><i class="fas fa-bug"></i></button>
-			</center>
-		</div>
-
-		<div class="emp"></div>
-		<div class="about" id="about">
-			<h1>About</h1>
-			<p>
-				VibeBerry is a cool music bot.
-			</p>
-			<br>
-			<p>
-				<mark>Easy</mark> To Use
-			</p>
-			<p>
-				<mark>Simple</mark> Commands
-			</p>
-			<p>
-				<mark>Best</mark> Music Quality
-			</p>
-		</div>
-
-		<div class="emp"></div>
-		<div class="commands" id="commands">
-			<h1>Commands</h1>
-			<p>
-				Prefixes: <mark>vibe</mark> <mark>vibeberry</mark> <mark>vb</mark> <mark>music</mark>
-			</p>
-			<p>
-				<mark2>&lt;prefix&gt; help</mark2>: Shows the help menu.<br>
-				<mark2>&lt;prefix&gt; connect</mark2>: Connects to the voice channel command user is in.<br>
-				<mark2>&lt;prefix&gt; disconnect</mark2>: Disconnects from the voice channel it is in.<br>
-				<mark2>&lt;prefix&gt; play &lt;music&gt;</mark2>: Searches for <mark2>&lt;music&gt;</mark2> and plays it.<br>
-				<mark2>&lt;prefix&gt; pause</mark2>: Pauses the music it is playing, if any.<br>
-				<mark2>&lt;prefix&gt; resume</mark2>: Resumes the paused music, if any music paused.<br>
-				<mark2>&lt;prefix&gt; stop</mark2>: Stops the music, if any.
-			</p>
-		</div>
-
-		<div class="emp"></div>
-		<div class="bug" id="bugs">
-			<h1>Bugs?</h1>
-			<p>
-				Found a bug? Report it in the official discord server - <a onclick="window.open('https://discord.gg/bquxvNDWWP');">Berry Services</a>.
-			</p>
-		</div>
-		
-		<div class="emp"></div>
-		<div class="ft">
-			<center>
-				Services under <img src="https://images-ext-2.discordapp.net/external/F-0SimQmCZdZYfFIO_oOTKp7qi3H7uVy0vjQafo4Owo/https/images-ext-1.discordapp.net/external/x_dF_ppBthHmRPQi75iuRXLMfK0wuAW2sBLTdtNlXAc/%253Fsize%253D1024/https/cdn.discordapp.com/avatars/894098855220617216/d9b9a3b48a054b9847401bb9178ed438.webp" style="object-fit: cover; border-radius: 48px;" height="18px" width="18px" /> Berry Services - Attachment Studios.
+				<p>
+					The Best Music Bot For You!
+				</p>
+				<i onclick="oauth();" class="fas fa-plus"></i>
+				<i onclick="window.open('https://github.com/Attachment-Studios/VibeBerry');" class="fab fa-github"></i>
 			</center>
 		</div>
 		<div class="bg"></div>
 	</body>
+	<script></script>
 </html>
